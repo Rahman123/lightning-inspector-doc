@@ -33,24 +33,23 @@ This tab shows the component markup.
 ### Collapse or Expand Markup
 You can expand or collapse the markup by clicking on the triangles at the start of each line. By default, the tree shows four levels of nested markup.
 
-TODO: image
+![Component Tree Tab](componentTreeExpand.png)
 
 ### Refresh the Data
 The component tree is expensive to serialize, and doesn't respond to component updates. You need to manually update the tree when necessary by scrolling to the top of the panel and clicking the *Refresh* button.
 
-TODO: image
+![Component Tree Tab](componentTreeRefresh.png)
 
 ### See More Details for a Node
 Double click a node to bring up a sidebar with more details for that selected node.
-TODO: image
+
+![Component Tree Tab](componentTreeDetails.png)
 
 The sidebar contains the following information:
 
 - *HTML Elements*  The count of HTML elements for the component (including children components).
 - *body* The body of your overall component is complex, but this shows you the body of your component, and the bodies of all the components you extended. The resulting body is the composition of those bodies.
 - *Supers* Shows you all the super components and their value providers. A component shares its attributes among all its supers so each level doesn't have its own set of attributes. There is just one attribute value at the concrete level, but each level of extension has its own body.
-
-TODO: image
 
 ### Get a Reference to a Component in the Console
 
