@@ -7,8 +7,7 @@ TODO: ask Skip where to point people for installation. Available on Chrome Web S
 
 # Usage
 
-1. Navigate to a Lightning app. For this doc, we're using:             https://&lt;myDomain&gt;.lightning.force.com/auradocs/reference.app
-where <code>&lt;myDomain&gt;</code> is the name of your custom Salesforce domain.
+1. Navigate to a Lightning app. For this doc, we're using the doc reference app at /auradocs/reference.app
 2. Launch the Chrome Dev Tools (More tools > Developer tools).
 
 You should see a Lightning tab in the dev tools.
@@ -29,7 +28,7 @@ TODO: brief one-liner explanation for each tab
 ## Component Tree Tab
 This tab shows the component markup.
 
-TODO: image
+![Component Tree Tab](componentTree.png)
 
 ### Collapse or Expand Markup
 You can expand or collapse the markup by clicking on the triangles at the start of each line. By default, the tree shows four levels of nested markup.
@@ -76,10 +75,36 @@ TODO: When i tried this with http://documentation.auraframework.org/auradocs#ref
 
 TODO: what does Collect Marks do? Does it show the flame graph while you continue to record?
 
-### See More Details for a Component
+### See More Performance Details for a Component
 Hover over a component in the flame graph to see more detailed information about that component in the bottom-left corner.
 
 TODO: image
 
 ### Narrow the Timeline
 Drag on the timeline to select a period of time to focus on.
+
+## Transactions Tab
+
+TODO: need more details on what this shows and how to populate the panel. I couldn't see any data using Record.
+
+TODO: add a good screenshot that is not internal specific.
+
+## Event Log Tab
+
+TODO: need more details on what this shows and how to populate the panel. I couldn't see any data using Record.
+
+TODO: add image
+
+## Storage Tab
+
+TODO: The storage service is an open source feature and not available for Lightning components. Should this tab be exposed? If so, what should we say about "actions" and "ComponentDefRegistry"?
+
+## ADS Tab
+
+TODO: is this relevant for Lightning components? If so, what should we say about it?
+
+## RLB Tab
+
+TODO: I see the message:  "Error": "No force:recordLayoutBroker components yet created". What is force:recordLayoutBroker and what do users need to know about it?
+
+
