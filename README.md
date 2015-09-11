@@ -29,7 +29,7 @@ TODO: brief one-liner explanation for each tab
 ## Component Tree Tab
 This tab shows the component markup.
 
-TODO: image
+![Component Tree Tab](componentTree.png)
 
 ### Collapse or Expand Markup
 You can expand or collapse the markup by clicking on the triangles at the start of each line. By default, the tree shows four levels of nested markup.
