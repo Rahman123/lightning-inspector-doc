@@ -7,8 +7,7 @@ TODO: ask Skip where to point people for installation. Available on Chrome Web S
 
 # Usage
 
-1. Navigate to a Lightning app. For this doc, we're using:             https://&lt;myDomain&gt;.lightning.force.com/auradocs/reference.app
-where <code>&lt;myDomain&gt;</code> is the name of your custom Salesforce domain.
+1. Navigate to a Lightning app. For this doc, we're using the doc reference app at /auradocs/reference.app
 2. Launch the Chrome Dev Tools (More tools > Developer tools).
 
 You should see a Lightning tab in the dev tools.
