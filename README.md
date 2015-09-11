@@ -29,8 +29,12 @@ TODO: brief one-liner explanation for each tab
 ## Component Tree Tab
 This tab shows the component markup.
 
+TODO: image
+
 ### Collapse or Expand Markup
 You can expand or collapse the markup by clicking on the triangles at the start of each line. By default, the tree shows four levels of nested markup.
+
+TODO: image
 
 ### Refresh the Data
 The component tree is expensive to serialize, and doesn't respond to component updates. You need to manually update the tree when necessary by scrolling to the top of the panel and clicking the *Refresh* button.
