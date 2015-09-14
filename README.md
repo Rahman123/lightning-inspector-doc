@@ -144,7 +144,9 @@ Invert the filter by starting the search string with <code>!</code>. For example
 
 ## Storage Tab
 
-TODO: The storage service is an open source feature and not available for Lightning components. Should this tab be exposed? If so, what should we say about "actions" and "ComponentDefRegistry"?
+This is an internal-only feature currently.
+
+TODO: The storage service is an open source feature and not available for Lightning components.
 
 ## ADS Tab
 
