@@ -22,7 +22,7 @@ TODO: brief one-liner explanation for each tab or link to each section below
 - Actions
 - Storage
 - ADS
-- Definitions
+- Definitions TODO - move this one up in the list and add details
 - RLB
 
 ## Component Tree Tab
@@ -89,12 +89,12 @@ The list of transactions includes counts of actions and XHRs (server-side reques
 
 TODO: I presume "transactions" are related to the MetricsService? MetricsService isn't officially exposed to customers so we should explain what we mean by transaction but shouldn't explicitly mention the MetricsService. I think this tab will only be useful for one.app as customers can't create their own transaction right now.
 
-TODO: add a good screenshot that is not internal specific.
+![Transactions Tab](transactions.png)
 
 ### See More Transaction Details
 Click the ID of a transaction to see more data in the Console.
 
-TODO: add image
+![Transaction Details](transactionDetails.png)
 
 ## Event Log Tab
 
