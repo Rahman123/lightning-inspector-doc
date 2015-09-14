@@ -16,13 +16,13 @@ There are a number of of sub tabs available to inspect different aspects of your
 
 TODO: brief one-liner explanation for each tab or link to each section below
 - Component Tree
+- Definitions
 - Performance
 - Transactions
 - Event Log
 - Actions
 - Storage
 - ADS
-- Definitions TODO - move this one up in the list and add details
 - RLB
 
 ## Component Tree Tab
@@ -54,6 +54,10 @@ The sidebar contains the following information:
 ### Get a Reference to a Component in the Console
 
 Double clicking on a component in the Component Tree or details sidebar generates a reference to that component in the console in the variable $auraTemp.
+
+## Definitions Tab
+
+TODO: add details
 
 ## Performance Tab
 
@@ -94,7 +98,7 @@ TODO: I presume "transactions" are related to the MetricsService? MetricsService
 ### See More Transaction Details
 Click the ID of a transaction to see more data in the Console.
 
-![Transaction Details](transactionDetails.png)
+![Transaction Details](transactionsDetails.png)
 
 ## Event Log Tab
 
