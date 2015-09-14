@@ -14,7 +14,7 @@ You should see a Lightning tab in the dev tools.
 
 There are a number of of sub tabs available to inspect different aspects of your app.
 
-TODO: brief one-liner explanation for each tab
+TODO: brief one-liner explanation for each tab or link to each section below
 - Component Tree
 - Performance
 - Transactions
@@ -70,12 +70,14 @@ Press the Record button again to stop gathering performance data.
 
 TODO: does the flame graph show now.
 
-TODO: When i tried this with http://documentation.auraframework.org/auradocs#reference , i got a popup: Error clearing marks on inspected window.
+
 
 TODO: what does Collect Marks do? Does it show the flame graph while you continue to record?
 
 ### See More Performance Details for a Component
 Hover over a component in the flame graph to see more detailed information about that component in the bottom-left corner.
+
+TODO: i couldn't get this hover functionality to work
 
 TODO: image
 
