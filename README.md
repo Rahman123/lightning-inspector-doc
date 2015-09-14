@@ -83,11 +83,18 @@ TODO: image
 Drag on the timeline to select a period of time to focus on.
 
 ## Transactions Tab
+Some apps delivered by Salesforce include transaction markers that enable you to see fine-grained metrics for actions within those transactions. You can't create your own transactions at this time.
 
-TODO: need more details on what this shows and how to populate the panel. I couldn't see any data using Record.
+The list of transactions includes counts of actions and XHRs (server-side requests) executed while the transaction was open. The list includes actions/XHRs fired by other events or handlers while the transaction was open. An XHR can include a batch of more than one server-side actions. 
+
 TODO: I presume "transactions" are related to the MetricsService? MetricsService isn't officially exposed to customers so we should explain what we mean by transaction but shouldn't explicitly mention the MetricsService. I think this tab will only be useful for one.app as customers can't create their own transaction right now.
 
 TODO: add a good screenshot that is not internal specific.
+
+### See More Transaction Details
+Click the ID of a transaction to see more data in the Console.
+
+TODO: add image
 
 ## Event Log Tab
 
