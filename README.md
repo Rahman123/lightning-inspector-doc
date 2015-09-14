@@ -57,7 +57,7 @@ Double clicking on a component in the Component Tree or details sidebar generate
 
 ## Definitions Tab
 
-TODO: add details
+This tab shows the list of definitions loaded on the page. Each definition describes metadata for an element, such as a component, event, or controller.
 
 ## Performance Tab
 
