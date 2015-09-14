@@ -123,6 +123,13 @@ This tab shows the server-side actions executed. Actions are recorded by default
 TODO: add image
 
 ### Filtering the List of Actions
+Toggle the buttons related to the different action states to filter the list.
+
+TODO: Storable is internal only as customers can set storable.
+
+Enter a search string in the <em>Filter</em> field to match any substring.
+
+Invert the filter by starting the search string with <code>!</code>. For example, <em>!serviceComponent://</em> returns all actions that are not related to service components.
 
 ## Storage Tab
 
