@@ -59,7 +59,7 @@ Double clicking on a component in the Component Tree or details sidebar generate
 
 This tab shows a flame graph of the creation time for your Lightning components. Longer and deeper portions of the graph are where you should look for potential performance bottlenecks.
 
-TODO: image
+![Performance Tab](performanceGraph.png)
 
 ### Record Performance Data
 Press the Record button to gather performance data. 
@@ -69,8 +69,6 @@ TODO: click around while gathering data?
 Press the Record button again to stop gathering performance data.
 
 TODO: does the flame graph show now.
-
-
 
 TODO: what does Collect Marks do? Does it show the flame graph while you continue to record?
 
