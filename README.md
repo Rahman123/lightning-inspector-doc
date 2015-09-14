@@ -26,7 +26,7 @@ TODO: brief one-liner explanation for each tab
 - RLB
 
 ## Component Tree Tab
-This tab shows the component markup.
+This tab shows the component markup including the tree of nested components.
 
 ![Component Tree Tab](componentTree.png)
 
@@ -85,14 +85,44 @@ Drag on the timeline to select a period of time to focus on.
 ## Transactions Tab
 
 TODO: need more details on what this shows and how to populate the panel. I couldn't see any data using Record.
+TODO: I presume "transactions" are related to the MetricsService? MetricsService isn't officially exposed to customers so we should explain what we mean by transaction but shouldn't explicitly mention the MetricsService. I think this tab will only be useful for one.app as customers can't create their own transaction right now.
 
 TODO: add a good screenshot that is not internal specific.
 
 ## Event Log Tab
 
-TODO: need more details on what this shows and how to populate the panel. I couldn't see any data using Record.
+This tab shows all the events fired. 
+
+TODO: need more details on how to populate the panel. I couldn't see any data using Record.
 
 TODO: add image
+
+### Filtering the List of Events
+By default, both application and component events are shown. You can hide or show both types of events by toggling the <em>App Events</em> and <Comp Events</em> buttons.
+
+Enter a search string in the <em>Filter</em> field to match any substring.
+
+Invert the filter by starting the search string with <code>!</code>. For example, <em>!aura</em> returns all events that are not in the <code>aura</code> namespace.
+
+### Show Unhandled Events
+Show events that are fired but are not handled. Unhandled events aren't listed by default but can be useful to see during development. 
+
+### View Graph of Events
+Expand an event to see more details. Click the <em>Toggle Grid</em> button to generate a network graph showing the events fired before and after this event, as well as the components handling those events.
+
+The graph is color coded.
+
++ <em>Black</em>: the current event
++ <em>Maroon</em>: the controller action
++ <em>Blue</em>: the event fired
+
+## Actions Tab
+
+This tab shows the server-side actions executed. Actions are recorded by default and the list automatically refreshes when the page refreshes.
+
+TODO: add image
+
+### Filtering the List of Actions
 
 ## Storage Tab
 
