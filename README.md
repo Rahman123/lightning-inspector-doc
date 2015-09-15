@@ -1,13 +1,38 @@
-# Doc for the Lightning Components Inspector Chrome plugin
+![Lightning Comopnents Inspector](logo.png)
+
+# Lightning Components Inspector
+## * Google Chrome DevTools Extension *   
+
+***
 
 The Lightning Components Inspector allows you to view and navigate the component tree for a component, inspect attributes of components, and investigate the component performance. 
 
+# Terms of Use
+
+This tool is provided "as-is" for early-access use. It carries no warranties, guaranties, or other obligations, written or implied.
+
+# Prerequisites
+
+1. Lightning Components proficiency.
+2. Experience with debugging web applications, including JavasScript, HTML, and CSS.
+3. Familiarity with the Chrome DevTools, and the ability to install and use Chrome Extensions.
+
 # Installation
-TODO: ask Skip where to point people for installation. Available on Chrome Web Store?
+
+1. From Google Chrome, navigate to the [Lightning Components Inspector](https://www.sfdc.co/inspector) on the Chrome Web Store.
+2. Click the *Add to Chrome* button
+
+![Chrome Web Store](chromeWebStore.png)
+
+# Support
+
+Please post any questions or feedback to the [Lightning Components Inspector Chatter Group](https://org62.my.salesforce.com/_ui/core/chatter/groups/GroupProfilePage?g=0F930000000kAWn). This software is early access, please do not contact Salesforce support!
+
+![Lightning Components Inspector Chatter](chatter.png)
 
 # Usage
 
-1. Navigate to a Lightning app. For this doc, we're using the doc reference app at /auradocs/reference.app
+1. Navigate to a Lightning app. For this doc, we're using the Salesforce1/Lightning Experience app at /one/one.app
 2. Launch the Chrome Dev Tools (More tools > Developer tools).
 
 You should see a Lightning tab in the dev tools.
@@ -59,6 +84,9 @@ Double clicking on a component in the Component Tree or details sidebar generate
 
 This tab shows the list of definitions loaded on the page. Each definition describes metadata for an element, such as a component, event, or controller.
 
+![Definitions Tab](definitions.png)
+
+
 ## Performance Tab
 
 This tab shows a flame graph of the creation time for your Lightning components. Longer and deeper portions of the graph are where you should look for potential performance bottlenecks.
@@ -66,22 +94,20 @@ This tab shows a flame graph of the creation time for your Lightning components.
 ![Performance Tab](performanceGraph.png)
 
 ### Record Performance Data
-Press the Record button to gather performance data. 
+The *Clear*, *Record*, and *Show current collected* buttons can be used to gather performance data. Use these buttons to capture specific user actions, or collections of user actions.
 
-TODO: click around while gathering data?
+![Performance Tab - Buttons](performanceGraphButtons.png)
 
-Press the Record button again to stop gathering performance data.
+1. Press the *Record* button to start gathering performance data.
+2. Press the *Record* button again to stop gathering performance data.
+3. Press the *Show current collected* button to display the performance data.
 
-TODO: does the flame graph show now.
-
-TODO: what does Collect Marks do? Does it show the flame graph while you continue to record?
+![Performance Tab - Details](performanceGraphDetails.png)
 
 ### See More Performance Details for a Component
-Hover over a component in the flame graph to see more detailed information about that component in the bottom-left corner.
+Hover over a component in the flame graph to see more detailed information about that component in the bottom-left corner. This information includes the component complexity and timing information, and may be used to diagnose performance issues.
 
-TODO: i couldn't get this hover functionality to work
-
-TODO: image
+![Performance Tab - Component Details](performanceGraphComponentDetails.png)
 
 ### Narrow the Timeline
 Drag on the timeline to select a period of time to focus on.
@@ -90,8 +116,6 @@ Drag on the timeline to select a period of time to focus on.
 Some apps delivered by Salesforce include transaction markers that enable you to see fine-grained metrics for actions within those transactions. You can't create your own transactions at this time.
 
 The list of transactions includes counts of actions and XHRs (server-side requests) executed while the transaction was open. The list includes actions/XHRs fired by other events or handlers while the transaction was open. An XHR can include a batch of more than one server-side actions. 
-
-TODO: I presume "transactions" are related to the MetricsService? MetricsService isn't officially exposed to customers so we should explain what we mean by transaction but shouldn't explicitly mention the MetricsService. I think this tab will only be useful for one.app as customers can't create their own transaction right now.
 
 ![Transactions Tab](transactions.png)
 
@@ -104,9 +128,15 @@ Click the ID of a transaction to see more data in the Console.
 
 This tab shows all the events fired. 
 
-TODO: need more details on how to populate the panel. I couldn't see any data using Record.
+![Event Log Tab](eventLogDetails.png)
 
-TODO: add image
+### Record Events
+The *Toggle recording* and *Clear* buttons can be used to gather event data. Use these buttons to capture specific user actions, or collections of user actions. The *Filter* input field can be used to filter out events, and the *App Events* and *Cmp Events* toggles can be used to view application or component level events.
+
+![Event Log Tab - Controls](eventControls.png)
+
+1. Press the *Toggle recording* button to start gathering event data.
+2. Press the *Toggle recording* button again to stop gathering event data.
 
 ### Filtering the List of Events
 By default, both application and component events are shown. You can hide or show both types of events by toggling the <em>App Events</em> and <Comp Events</em> buttons.
@@ -114,6 +144,8 @@ By default, both application and component events are shown. You can hide or sho
 Enter a search string in the <em>Filter</em> field to match any substring.
 
 Invert the filter by starting the search string with <code>!</code>. For example, <em>!aura</em> returns all events that are not in the <code>aura</code> namespace.
+
+![Event Log Tab - Filters](eventLog.png)
 
 ### Show Unhandled Events
 Show events that are fired but are not handled. Unhandled events aren't listed by default but can be useful to see during development. 
@@ -127,16 +159,16 @@ The graph is color coded.
 + <em>Maroon</em>: the controller action
 + <em>Blue</em>: the event fired
 
+![Event Log Tab - Graph](eventLogGraph.png)
+
 ## Actions Tab
 
 This tab shows the server-side actions executed. Actions are recorded by default and the list automatically refreshes when the page refreshes.
 
-TODO: add image
+![Actions Tab](actions.png)
 
 ### Filtering the List of Actions
 Toggle the buttons related to the different action states to filter the list.
-
-TODO: Storable is internal only as customers can set storable.
 
 Enter a search string in the <em>Filter</em> field to match any substring.
 
@@ -144,16 +176,21 @@ Invert the filter by starting the search string with <code>!</code>. For example
 
 ## Storage Tab
 
-This is an internal-only feature currently.
+This tab shows the client-side storage for Lightning Component applications. It is currently not directly accessible in standalone applications, but this tool can be used to analyze Salesforce1 and Lightning Experience.
 
-TODO: The storage service is an open source feature and not available for Lightning components.
+![Storage Tab](storage.png)
 
 ## ADS Tab
 
-TODO: is this relevant for Lightning components? If so, what should we say about it?
+This tab shows information for the Aura Data Service, aka Lightning Data Service. It is currently not directly accessible in standalone applications, but this tool can be used to analyze Salesforce1 and Lightning Experience.
+
+![ADS Tab](ads.png)
 
 ## RLB Tab
 
-TODO: I see the message:  "Error": "No force:recordLayoutBroker components yet created". What is force:recordLayoutBroker and what do users need to know about it?
+This tab shows information for the Record Layout Broker. It is currently not directly accessible in standalone applications, but this tool can be used to analyze Salesforce1 and Lightning Experience.
+
+![RLB Tab](rlb.png)
+
 
 
