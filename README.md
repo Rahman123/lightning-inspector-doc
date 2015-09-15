@@ -37,18 +37,7 @@ Please post any questions or feedback to the [Lightning Components Inspector Cha
 
 You should see a Lightning tab in the dev tools.
 
-There are a number of of sub tabs available to inspect different aspects of your app.
-
-TODO: brief one-liner explanation for each tab or link to each section below
-- Component Tree
-- Definitions
-- Performance
-- Transactions
-- Event Log
-- Actions
-- Storage
-- ADS
-- RLB
+There are a number of of sub tabs available to inspect different aspects of your app. Please refer to the sections below for details on each tab.
 
 ## Component Tree Tab
 This tab shows the component markup including the tree of nested components.
