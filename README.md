@@ -5,7 +5,7 @@
 
 ***
 
-The Lightning Components Inspector allows you to view and navigate the component tree for a component, inspect attributes of components, and investigate the component performance. 
+The Salesforce Lightning Inspector allows you to view and navigate the component tree for a component, inspect attributes of components, and investigate the component performance. 
 
 This documentation was for the early-access version of the Lightning Components Inspector (now rebranded as the Salesforce Lightning Inspector). This repo is no longer active.
 The official doc is now available in the [Lightning Components Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.lightning.meta/lightning/inspector_intro.htm).
